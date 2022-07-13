@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+import random as ran
+student = []
+for i in range(30):
+  student.append(i+1)
+
+score = []
+for i in range(30):
+  score.append(ran.randint(1,100))
+
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1)
+
+ax.plot(student,score)
+plt.show()
